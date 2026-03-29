@@ -1,0 +1,37 @@
+{
+  "name": "project-phoenix",
+  "version": "1.0.0",
+  "description": "AI-Augmented QA Automation Framework - Enterprise Grade",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:api": "playwright test --grep @api",
+    "test:ui": "playwright test --grep @ui",
+    "test:headed": "playwright test --headed",
+    "test:ui-headed": "playwright test --grep @ui --headed",
+    "test:debug": "playwright test --debug",
+    "report": "playwright show-report reports/html",
+    "clean": "rm -rf reports logs tests/test-results",
+    "lint": "eslint . --ext .js",
+    "format": "prettier --write ."
+  },
+  "keywords": [
+    "playwright",
+    "automation",
+    "testing",
+    "qa",
+    "sdet"
+  ],
+  "author": "Shrikant Patil",
+  "license": "MIT",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "@types/node": "^20.0.0",
+    "allure-playwright": "^2.9.2",
+    "dotenv": "^16.3.1",
+    "winston": "^3.11.0",
+    "eslint": "^8.50.0",
+    "prettier": "^3.0.0"
+  }
+}
